@@ -74,12 +74,15 @@ p{
 }
 .container{
   display: flex;
-  position: relative;
+  position:relative;
+  top: 40px;
+  left: auto;
+  /* z-index: -1; */
   
 }
 
 .side{
-  flex: 3;
+  flex: 4;
   height: 100vh;
   color: white;
   background-color: black;
@@ -103,7 +106,29 @@ a{
   overflow: scroll;
   line-height: 30px;
 }
+.stick {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 2;
 
+}
+.recom{
+  padding:10px;
+  font-size: 10px;
+  border-radius: 4px  ;
+  display: flex;
+  border:1px solid #04AA6D;
+
+}
+.rec{
+  flex: 1;
+  padding:10px;
+  font-size: 10px;
+  border-radius: 4px  ;
+  display: block;
+  border:1px solid #04AA6D;
+}
 
 </style>
 </head>
@@ -113,7 +138,7 @@ a{
 <div class="mobile-container">
 
 <!-- Top Navigation Menu -->
-<div class="topnav">
+<div class="topnav stick">
     <div class="grid-ite">  <img src="wonder.png" alt="logo1" border="0" class="logo" width="auto" height="50px" ></div>
 
   <a href="#home" class="active"></a>
@@ -135,10 +160,24 @@ a{
 <!-- End smartphone / tablet look -->
 </div>
 
+
+
 <div class="container">
 
 
-    <div class="content">C language Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.
+    <div class="content">
+      
+      <div   class="recom">
+        <a href="index1.html" class="rec" target="_blank">page2</a>
+        <a href="ano.html"  target="_blank"  class="rec" >page3</a>
+        <a href="test.html"  target="_blank"  class="rec" >page4</a>
+          <a href="test1.html"  target="_blank"  class="rec" >page5</a>
+          <a href="index1.html"  target="_blank"  class="rec" >page2</a>
+          <a href="ano.html"  target="_blank"  class="rec" >page3</a>
+          <a href="test.html"  target="_blank"  class="rec" >page4</a>
+            <a href="test1.html"  target="_blank"  class="rec" >page5</a>
+      </div>
+      C language Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.
     
     The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.
     
@@ -236,8 +275,6 @@ a{
        
 </div></div>
 
-<p>venkatsg</p>
-    
 
 
 
